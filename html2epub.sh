@@ -12,5 +12,6 @@ output=$2
 pandoc $input -o $output \
 --css=ebook.css \
 --epub-cover-image=Fondamenti.png \
+
 epub_version="3.0"
 toc_level=2
