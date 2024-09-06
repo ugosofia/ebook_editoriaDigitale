@@ -1,85 +1,265 @@
-/* Stile globale per il corpo del documento */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: #f8f9fa;
+    color: #343a40;
 }
-
-/* Stile per il titolo del capitolo */
 h1 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-}
-
-/* Stile per i titoli di sezione */
-h2 {
-    color: #555;
-    margin-top: 20px;
-}
-
-/* Stile per i sottotitoli di sezione */
-h3 {
-    color: #777;
-    margin-top: 15px;
-}
-
-/* Stile per i paragrafi di testo */
-p {
-    color: #333;
-}
-
-/* Stile per i collegamenti ipertestuali */
-a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-/* Stile per i collegamenti ipertestuali al passaggio del mouse */
-a:hover {
-    text-decoration: underline;
-}
-
-/* Stile per gli elenchi puntati */
-ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-/* Stile per i video incorporati */
-video {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin-top: 10px;
-}
-
-/* Stile per i riquadri di testo con sfondo grigio */
-.blockquote {
-    background-color: #f4f4f4;
-    border-left: 4px solid #0077cc;
-    padding: 10px 20px;
-    margin: 10px 0;
-}
-
-/* Stile per il piè di pagina */
-footer {
+    font-family: 'Playfair Display', serif;
+    color: #007bff;
     text-align: center;
-    color: #777;
+    margin-bottom: 40px;
+}
+h2 {
+    font-family: 'Playfair Display', serif; /* Font elegante e leggibile */
+    font-size: 1.4em; /* Dimensione del testo */
+    color: #9a03f1; /* Colore vivace per i titoli */
+    text-align: center; /* Allineamento centrale */
+    border-bottom: 2px solid #007bff; /* Linea sotto il titolo */
+    padding-bottom: 10px; /* Spaziatura tra il titolo e la linea */
+    margin-top: 40px; /* Spaziatura superiore */
+    margin-bottom: 20px; /* Spaziatura inferiore */
+    letter-spacing: 2px; /* Spaziatura tra le lettere */
+    position: relative; /* Necessario per la decorazione */
+}
+
+h2::before {
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /* Posiziona sotto il testo */
+    transform: translateX(-50%); /* Centra l'elemento orizzontalmente */
+    width: 60px; /* Larghezza della decorazione */
+    height: 4px; /* Spessore della decorazione */
+    background-color: #007bff; /* Colore della decorazione */
+    border-radius: 2px; /* Arrotonda i bordi della linea */
+}
+ul, ol {
+    list-style-position: inside; /* Posiziona i marker di elenco dentro il rientro */
+    margin: 20px 0; /* Aggiunge spazio sopra e sotto la lista */
+    padding-left: 20px; /* Aggiunge un leggero rientro a sinistra */
+    font-family: 'Lato', sans-serif; /* Font per il testo delle liste */
+    line-height: 1.8; /* Maggiore spaziatura tra le righe */
+    color: #343a40; /* Colore del testo */
+    font-size: 1.1em; /* Leggero aumento della dimensione del testo */
+}
+
+ul li::before {
+    content: "•"; /* Simbolo personalizzato per la lista */
+    color: #007bff; /* Colore del simbolo */
+    font-weight: bold; /* Simbolo in grassetto */
+    display: inline-block; 
+    width: 1.5em; /* Larghezza per il simbolo */
+    margin-left: -1em; /* Sposta leggermente il simbolo a sinistra */
+}
+ol {
+    counter-reset: list-counter; /* Inizializza il contatore per le liste ordinate */
+}
+ol li {
+    counter-increment: list-counter; /* Aumenta il contatore */
+}
+ol li::before {
+    content: counter(list-counter) ". "; /* Inserisce il numero del contatore */
+    font-weight: bold; /* Numeri in grassetto */
+    color: #007bff; /* Colore del numero */
+}
+li {
+    margin-bottom: 10px; /* Spazio tra gli elementi della lista */
+    padding-left: 5px; /* Aggiungi uno spazio leggero tra il simbolo e il testo */
+    border-left: 3px solid #007bff; /* Barra verticale a sinistra di ogni elemento */
+    padding-left: 10px; /* Spostamento del testo a destra per allineamento con la barra */
+}
+li:hover {
+    background-color: #f0f8ff; /* Cambia il colore di sfondo al passaggio del mouse */
+    border-left-color: #0056b3; /* Cambia colore della barra a sinistra al passaggio del mouse */
+    transition: background-color 0.3s ease, border-left-color 0.3s ease; /* Animazione di transizione */
+}
+p {
+    font-family: 'Lato', sans-serif; /* Font moderno e leggibile */
+    font-size: 1.1em; /* Dimensione leggermente maggiore per la leggibilità */
+    line-height: 1.8; /* Spaziatura più ampia tra le righe per migliorare la leggibilità */
+    color: #343a40; /* Colore testo scuro ma non troppo contrastante */
+    margin-bottom: 20px; /* Spaziatura sotto ogni paragrafo */
+    max-width: 800px; /* Larghezza massima per evitare paragrafi troppo lunghi */
+    text-align: justify; /* Allineamento giustificato per un aspetto ordinato */
+    text-indent: 30px; /* Rientro della prima riga per differenziare i paragrafi */
+    padding: 10px 15px; /* Leggera imbottitura interna per dare respiro al testo */
+    background-color: #f8f9fa; /* Sfondo chiaro per evidenziare i paragrafi */
+    border-left: 4px solid #007bff; /* Barra verticale colorata per enfasi */
+    border-radius: 8px; /* Angoli arrotondati per morbidezza visiva */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Leggera ombra per dare profondità */
+}
+.image-container {
+    text-align: center;
+    margin: 20px;
+}
+.image-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.image-container figcaption {
+    font-size: 0.9em; /* Riduce leggermente la dimensione del testo */
+    color: #666; /* Colore grigio per i copyright */
+    margin-top: 10px; /* Spazio tra l'immagine e il copyright */
+    text-align: center; /* Centra il testo del copyright */
+    font-style: italic; /* Didascalia in corsivo per differenziarla dal contenuto principale */
+}
+.highlight {
+    max-width: max-content;
+    text-indent: 0%;
+    font-style: italic;
+    color: #17a2b8;
+}
+.invitation {
+    max-width: max-content;
+    text-indent: 0%;
+    font-weight: bold;
+    font-style: italic;
     margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-left: 5px solid #007bff;
+}
+.map-container {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente (se necessario) */
+    margin-bottom: 40px;
+}
+.map-container iframe {
+    width: 80%; /* Regola la dimensione della mappa */
+    height: 400px; /* Altezza della mappa */
+    border: 2px solid #007bff; /* Bordo visivo */
+    border-radius: 8px; /* Bordo arrotondato */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.monument, .sentieri, .prodotti, .spiaggia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.monument:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.image-stack {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.image-stack img {
+    height: 300px; /* Altezza fissa per tutte le immagini */
+    width: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.descrizione {
+    text-align: left;
+    padding: 20px;
+    width: 50%;
+}
+.descrizione h2 {
+    font-family: 'Playfair Display', serif;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.descrizione p {
+    
+    text-align: left;
+    font-size: 1.1em;
+}
+.map{
+    display: flex;
+    align-items: center;
+}
+.image-descrizione img {
+    width: 100%; /* Fa sì che l'immagine occupi il 100% del contenitore */
+    max-width: 250px; /* Imposta una larghezza massima per l'immagine */
+    height: auto; /* Mantiene le proporzioni */
+    display: block;
+    margin: 0 auto; /* Centra l'immagine orizzontalmente */
+    padding-top: 20px; /* Aggiunge uno spazio sopra l'immagine */
+    border-radius: 8px; /* Arrotonda leggermente gli angoli dell'immagine */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra per profondità */
 }
 
-/* Stile per i collegamenti nel piè di pagina */
-footer a {
+.come-arrivare {
+    background-color: #f0f4f8; /* Colore di sfondo chiaro */
+    padding: 40px 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto; /* Centra la sezione nella pagina */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Aggiunge ombra leggera */
+}
+
+.come-arrivare h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    color: #007bff; /* Colore blu per il titolo */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.transport-option {
+    margin-bottom: 30px; /* Spazio tra le opzioni di trasporto */
+}
+
+.transport-option h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4em;
+    color: #343a40; /* Colore scuro per i titoli secondari */
+    margin-bottom: 10px;
+}
+
+.transport-option p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555; /* Colore grigio scuro per il testo descrittivo */
+    padding: 10px 15px;
+    background-color: #fff; /* Sfondo bianco per i paragrafi */
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Leggera ombra per i paragrafi */
+}
+.conclusioni {
+    background-color: #eaf2f8;
+    padding: 40px 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 40px auto; /* Aggiunge margine sopra e sotto */
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.conclusioni h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.conclusioni p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
     color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-/* Stile per gli esempi di codice */
-code {
-    background-color: #f5f5f5;
-    font-family: Consolas, monospace;
-    padding: 2px 4px;
-    border: 1px solid #ccc;
+.conclusioni .invito {
+    font-size: 1.2em;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 30px;
 }
+
