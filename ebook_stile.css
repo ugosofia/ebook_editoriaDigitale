@@ -129,12 +129,19 @@ p {
     align-items: center; /* Centra verticalmente (se necessario) */
     margin-bottom: 40px;
 }
-.map-container iframe {
-    width: 80%; /* Regola la dimensione della mappa */
-    height: 400px; /* Altezza della mappa */
+.map-container img {
+    width: 600%; /* Regola la dimensione della mappa */
+    height: 800px; /* Altezza della mappa */
     border: 2px solid #007bff; /* Bordo visivo */
     border-radius: 8px; /* Bordo arrotondato */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.map-container figcaption {
+    font-size: 0.9em; /* Riduce leggermente la dimensione del testo */
+    color: #666; /* Colore grigio per i copyright */
+    margin-top: 5px; /* Spazio tra l'immagine e il copyright */
+    text-align: center; /* Centra il testo del copyright */
+    font-style: italic; /* Didascalia in corsivo per differenziarla dal contenuto principale */
 }
 .monument, .sentieri, .prodotti, .spiaggia {
     display: flex;
