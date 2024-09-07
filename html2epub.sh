@@ -10,8 +10,8 @@ input=$1
 output=$2
 
 pandoc $input -o $output \
---css=ebook.css \
---epub-cover-image=Fondamenti.png \
+--css=ebook_stile.css \
+--epub-cover-image=ebook_copertina.png \
 
 epub_version="3.0"
 toc_level=2
