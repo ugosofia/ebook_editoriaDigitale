@@ -82,9 +82,8 @@ p {
     line-height: 1.8; /* Spaziatura più ampia tra le righe per migliorare la leggibilità */
     color: #343a40; /* Colore testo scuro ma non troppo contrastante */
     margin-bottom: 20px; /* Spaziatura sotto ogni paragrafo */
-    max-width: 800px; /* Larghezza massima per evitare paragrafi troppo lunghi */
-    text-align: justify; /* Allineamento giustificato per un aspetto ordinato */
-    text-indent: 30px; /* Rientro della prima riga per differenziare i paragrafi */
+    max-width: max-content;
+    text-align: left; /* Allineamento giustificato per un aspetto ordinato */
     padding: 10px 15px; /* Leggera imbottitura interna per dare respiro al testo */
     background-color: #f8f9fa; /* Sfondo chiaro per evidenziare i paragrafi */
     border-left: 4px solid #007bff; /* Barra verticale colorata per enfasi */
@@ -93,22 +92,22 @@ p {
 }
 .image-container {
     text-align: center;
-    margin: 20px;
+    margin: 10px;
 }
 .image-container img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 80%;
+    height: 800px;
     border-radius: 8px;
 }
 .image-container figcaption {
     font-size: 0.9em; /* Riduce leggermente la dimensione del testo */
     color: #666; /* Colore grigio per i copyright */
     margin-top: 10px; /* Spazio tra l'immagine e il copyright */
-    text-align: center; /* Centra il testo del copyright */
+    text-align: left; /* Centra il testo del copyright */
     font-style: italic; /* Didascalia in corsivo per differenziarla dal contenuto principale */
 }
 .highlight {
+    text-align: left;
     max-width: max-content;
     text-indent: 0%;
     font-style: italic;
@@ -157,8 +156,8 @@ p {
     gap: 10px;
 }
 .image-stack img {
-    height: 300px; /* Altezza fissa per tutte le immagini */
-    width: auto;
+    height: 800px; /* Altezza fissa per tutte le immagini */
+    width: 600px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -166,7 +165,7 @@ p {
 .descrizione {
     text-align: left;
     padding: 20px;
-    width: 50%;
+    width: 100%;
 }
 .descrizione h2 {
     font-family: 'Playfair Display', serif;
@@ -174,8 +173,8 @@ p {
     margin-bottom: 10px;
 }
 .descrizione p {
-    
-    text-align: left;
+    text-indent: 0%;
+    text-align: center;
     font-size: 1.1em;
 }
 .map{
@@ -262,4 +261,7 @@ p {
     font-weight: bold;
     margin-top: 30px;
 }
+.split_page{
+    page-break-before:always;
+    }
 
