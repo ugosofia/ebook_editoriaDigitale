@@ -15,7 +15,7 @@ csl: IEEE.csl
 
 # Guida Turistica: Bagnara Calabra
 
-![Copertina ebook](../ebook_copertina.png){width=100px height=100px}
+![Copertina ebook](../ebook_copertina.png)
 
 ## Introduzione
 
@@ -136,8 +136,9 @@ Tecnologie adottate:
     - Canva (per la copertina e per l'edit delle immagini)
     - Padlet (per la mappa interattiva)
     - App Libri e Calibre per leggere l'ebook
-    - Git e GitHub (versioning)
+    - Git e GitHub (versioning) [^5]
 
+[^5]: https://docs.github.com
 
 ### Esecuzione del flusso
 
@@ -171,3 +172,5 @@ Il progetto è stato concepito per rispondere in modo efficace all’esigenza di
 
 ## Bibliografia e sitografia
 
+@ceravolo2023
+@sechi2010
