@@ -40,10 +40,10 @@ La creazione del documento è avvenuta tramite un flusso agile e strutturato, ch
 ### Risultati
 Il risultato finale è una guida turistica che:
 - Fornisce informazioni dettagliate su monumenti e attrazioni, accompagnate da immagini rappresentative.
-- Integra una mappa (tramite QR Code) con i punti di interesse.
+- Integra una mappa (tramite QR Code) con i punti di interesse.[^1]
 - Offre una sezione conclusiva che invita il visitatore a scoprire Bagnara Calabra.
 
-[^1]: http://kb.daisy.org/publishing/docs/html/epub-type.html
+[^1]: https://padlet.com/dashboard?mobile_page=Collection&filter=all
 
 ## Ideazione 
 
@@ -67,12 +67,12 @@ Il progetto si concentra su una strategia di comunicazione che mira a mettere in
 Questi temi vengono trattati in modo da creare una guida completa, che non solo accompagna il visitatore nella scoperta del territorio, ma lo invita anche a vivere l'esperienza della città in tutte le sue sfaccettature.
 
 ### Destinatari
-L'ebook si rivolge a un pubblico diversificato, con un focus su viaggiatori interessati a esperienze autentiche, cultura locale e bellezze naturali. Di seguito vengono descritte le principali personas alle quali si rivolge la guida, con alcuni scenari d'uso che evidenziano le modalità di fruizione del prodotto.
+L'ebook si rivolge a un pubblico diversificato, con un focus su viaggiatori interessati a esperienze autentiche, cultura locale e bellezze naturali[^2]. Di seguito vengono descritte le principali personas alle quali si rivolge la guida, con alcuni scenari d'uso che evidenziano le modalità di fruizione del prodotto.
 [^2]: https://it.semrush.com/persona/
 
 [Personas1](https://it.semrush.com/persona/share/6BZTF603XP6bHW_TFVw5pRW00i_iihCIZXQjTFPLweo/)
 [Personas2](https://it.semrush.com/persona/share/B77f8PzQOqDTm8I6x6jtBgywikfGMtpr3aM3lo1m--E/)
-[Personas3] (https://it.semrush.com/persona/share/zMU6TFfZBcXXMOdSdbEChguap8Dq2JZohg-yJnwNtSY/)
+[Personas3](https://it.semrush.com/persona/share/zMU6TFfZBcXXMOdSdbEChguap8Dq2JZohg-yJnwNtSY/)
 
 
 ### Requisiti di accettazione
@@ -115,7 +115,7 @@ Lo stile della guida sarà orientato verso un’espressione **semi-formale**, in
 
 ### Acquisizione dei contenuti
 Per la realizzazione della guida turistica di **Bagnara Calabra**, i contenuti saranno acquisiti da diverse fonti, bilanciando l’uso di risorse gratuite, la generazione automatizzata e la redazione manuale, con costi pari a zero.
-La maggior parte dei contenuti sono stati presi dal web, altri invece, come alcune foto e mappe, sono state prodotte e/o editate da me, inserendo per tutte le immagini la dimensione. Per altri contenuti, si è fatto riferimento a siti turisti della zona e ad articoli storici scritti da storici del posto.
+La maggior parte dei contenuti sono stati presi dal web, altri invece, come alcune foto e mappe, sono state prodotte e/o editate da me, inserendo per tutte le immagini la dimensione. Per altri contenuti, si è fatto riferimento a siti turisti della zona[^3] e ad articoli storici scritti da storici del posto[^4].
 [^3]: https://calabriastraordinaria.it/
 [^4]: https://www.academia.edu/
 
@@ -145,7 +145,7 @@ Tecnologie adottate:
 
 Tutti i materiali descritti sono accessibili tramite il seguente repository GitHub:
 
-[Link al repository GitHub](#https://github.com/ugosofia/ebook_editoriaDigitale.git)
+[Link al repository GitHub](https://github.com/ugosofia/ebook_editoriaDigitale.git)
 
 Gli utenti possono clonare il repository per esplorare i prototipi e sperimentare il flusso di produzione descritto.
 
