@@ -30,6 +30,7 @@ Questo progetto ha avuto come obiettivo principale la creazione di una guida tur
 Il progetto è stato sviluppato utilizzando una combinazione di tecnologie web moderne, tra cui:
 - **HTML5** per la struttura del ebook.
 - **CSS** per lo stile.
+- **EPUB3** per il prodotto finale
 
 ### Flusso di gestione documentale
 La creazione del documento è avvenuta tramite un flusso agile e strutturato, che ha previsto:
@@ -100,7 +101,7 @@ Per garantire una diffusione capillare della guida turistica di **Bagnara Calabr
 
 **Market Place**
    - La guida verrà resa disponibile anche su piattaforme di vendita di eBook come Amazon, Google Play Books e Apple Books.
-   - **Formato**: **ePub**, uno dei formati più comuni per la lettura su eReader e tablet.
+   - **Formato**: **ePub3**, uno dei formati più comuni per la lettura su eReader e tablet.
    - **Obiettivo**: Permettere ai turisti di scaricare la guida su dispositivi offline e accedere alle informazioni anche senza connessione a Internet, rendendola un compagno di viaggio pratico.
 
 #### Formati dati richiesti
@@ -130,14 +131,15 @@ Tecnologie adottate:
 
     - Html
     - Markdown
-    - epub3 [4^]: https://www.w3.org/TR/epub-33/
+    - epub3[^4]
     - Css3
     - Pandoc
     - Canva (per la copertina e per l'edit delle immagini)
     - Padlet (per la mappa interattiva)
     - App Libri e Calibre per leggere l'ebook
-    - Git e GitHub (versioning) [^5]
+    - Git e GitHub (versioning)[^5]
 
+[^4]: https://www.w3.org/TR/epub-33/
 [^5]: https://docs.github.com
 
 ### Esecuzione del flusso
@@ -158,7 +160,7 @@ Gli utenti possono clonare il repository per esplorare i prototipi e sperimentar
 2. **Riduzione degli errori**: L'automazione ha ridotto gli errori nel formattare i documenti e nella gestione dei contenuti, rendendo il processo più preciso.
 3. **Miglioramento della qualità**: Il design ottimizzato e le immagini di alta qualità hanno migliorato l’aspetto visivo della guida, offrendo un’esperienza migliore agli utenti.
 4. **Maggiore accettazione tecnologica**: L'uso di tecnologie familiari ha facilitato l’uso del sistema sia da parte dei redattori che degli utenti.
-5. **Nuovi canali di distribuzione**: La guida è stata distribuita eBook, raggiungendo il più possibile numero di utenti.
+5. **Nuovi canali di distribuzione**: La guida è stata distribuita tramite eBook, raggiungendo il più possibile numero di utenti.
 6. **Nuovi scenari d'uso**: Formati offline e contenuti interattivi hanno reso la guida più adatta a diversi tipi di viaggiatori.
  
 ### Limiti emersi
