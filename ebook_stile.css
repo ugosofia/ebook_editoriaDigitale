@@ -155,10 +155,6 @@ p {
     text-align: center;
     font-size: 1.1em;
 }
-.map{
-    display: flex;
-    align-items: center;
-}
 .image-descrizione img {
     width: 100%; /* Fa sì che l'immagine occupi il 100% del contenitore */
     max-width: 250px; /* Imposta una larghezza massima per l'immagine */
@@ -169,7 +165,6 @@ p {
     border-radius: 8px; /* Arrotonda leggermente gli angoli dell'immagine */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra per profondità */
 }
-
 .come-arrivare {
     background-color: #f0f4f8; /* Colore di sfondo chiaro */
     padding: 40px 20px;
@@ -238,6 +233,14 @@ p {
     color: #007bff;
     font-weight: bold;
     margin-top: 30px;
+}
+section.copyright-info {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 .split_page{
     break-before: always;    

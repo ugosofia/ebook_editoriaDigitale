@@ -123,7 +123,7 @@ La maggior parte dei contenuti sono stati presi dal web, altri invece, come alcu
 
 ### Gestione documentale
 
-![Gestione Documentale](../diagram.svg)
+![Gestione Documentale](../diagram.jpg)
 
 ### Tecnologie adottate
 
@@ -137,7 +137,7 @@ Tecnologie adottate:
     - Canva (per la copertina e per l'edit delle immagini)
     - Padlet (per la mappa interattiva)
     - App Libri e Calibre per leggere l'ebook
-    - Git e GitHub (versioning)[^6]
+    - Git e GitHub (versioning)
 [^5]
 [^6]
 
