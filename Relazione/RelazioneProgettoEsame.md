@@ -131,13 +131,15 @@ Tecnologie adottate:
 
     - Html
     - Markdown
-    - epub3[^5]
+    - epub3
     - Css3
     - Pandoc
     - Canva (per la copertina e per l'edit delle immagini)
     - Padlet (per la mappa interattiva)
     - App Libri e Calibre per leggere l'ebook
     - Git e GitHub (versioning)[^6]
+[^5]
+[^6]
 
 [^5]: https://www.w3.org/TR/epub-33/
 [^6]: https://docs.github.com
